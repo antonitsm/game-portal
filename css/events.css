@@ -1,0 +1,90 @@
+#proximos-eventos {
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    padding: 50px;
+    text-align: center;
+}
+
+.item010-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.item010-title {
+    font-size: 36px;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.item010-description {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.item010-event-calendar {
+    background: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.item010-event-list {
+    list-style: none;
+}
+
+.item010-event-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 18px;
+}
+
+.item010-event-list li:last-child {
+    border-bottom: none;
+}
+
+.item010-event-date {
+    font-weight: bold;
+    color: #495057;
+}
+
+.item010-event-name {
+    color: #007bff;
+}
+
+.item010-countdown-section {
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.item010-countdown-section h3 {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.item010-countdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item010-time-unit {
+    text-align: center;
+}
+
+.item010-time-unit span:first-child {
+    font-size: 36px;
+    color: #007bff;
+    display: block;
+}
+
+.item010-time-unit span:last-child {
+    font-size: 18px;
+    color: #6c757d;
+}

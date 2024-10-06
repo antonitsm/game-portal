@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de jogos em uma única página">
+    <meta name="keywords" content="jogos, videogames, portal, análises, comunidade">
+    <title>Game Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/trending.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/top-rated.css">
+    <link rel="stylesheet" href="css/review.css">
+    <link rel="stylesheet" href="css/gameplay.css">
+    <link rel="stylesheet" href="css/comunidade.css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header-container">
+            <div class="site-name">
+                <h1>Game Portal</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#trending">Jogos Polulares</a></li>
+                    <li><a href="#articles">Artigos</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#top-rated">Avaliações</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#gameplay">Gameplay</a></li>
+                    <li><a href="#developer-spotlight">Comunidade</a></li>
+                    <li><a href="#newsletter">Notícias</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#proximos-eventos">Eventos</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Descubra o Melhor do Mundo dos Games</h1>
+            <p>Seja bem-vindo ao Portal de Jogos, onde você encontra tudo sobre os lançamentos mais recentes, análises detalhadas e uma comunidade apaixonada por games.</p>
+            <div class="hero-buttons">
+                <a href="#trending" class="btn-primary">Explorar Jogos</a>
+                <a href="#articles" class="btn-secondary">Ler Análises</a>
+                <a href="#community" class="btn-tertiary">Junte-se à Comunidade</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="trending" class="item001-section">
+        <div class="item001-container">
+            <h2 class="item001-title">Jogos em Destaque</h2>
+            
+            <div class="item001-filters">
+                <select class="item001-filter" id="item001-filter-genre">
+                    <option value="">Filtrar por Gênero</option>
+                    <option value="ação">Ação</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="rpg">RPG</option>
+                    <option value="estratégia">Estratégia</option>
+                </select>
+                <select class="item001-filter" id="item001-filter-platform">
+                    <option value="">Filtrar por Plataforma</option>
+                    <option value="pc">PC</option>
+                    <option value="playstation">PlayStation</option>
+                    <option value="xbox">Xbox</option>
+                    <option value="switch">Nintendo Switch</option>
+                </select>
+                <select class="item001-filter" id="item001-filter-release">
+                    <option value="">Filtrar por Lançamento</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                </select>
+            </div>
+
+            <div class="item001-carousel">
+                <div class="item001-game-card">
+                    <img src="https://via.placeholder.com/200x300" alt="Imagem do Jogo 1" class="item001-game-image">
+                    <div class="item001-game-info">
+                        <h3 class="item001-game-title">Aventura Épica</h3>
+                        <p class="item001-game-description">Descubra um mundo mágico e desbrave mistérios incríveis nesta jornada épica.</p>
+                        <button class="item001-read-more">Leia Mais</button>
+                    </div>
+                </div>
+
+                <div class="item001-game-card">
+                    <img src="https://via.placeholder.com/200x300" alt="Imagem do Jogo 2" class="item001-game-image">
+                    <div class="item001-game-info">
+                        <h3 class="item001-game-title">Batalha Futurista</h3>
+                        <p class="item001-game-description">Enfrente inimigos em um futuro distópico cheio de perigos e ação eletrizante.</p>
+                        <button class="item001-read-more">Leia Mais</button>
+                    </div>
+                </div>
+
+                <div class="item001-game-card">
+                    <img src="https://via.placeholder.com/200x300" alt="Imagem do Jogo 3" class="item001-game-image">
+                    <div class="item001-game-info">
+                        <h3 class="item001-game-title">Estratégia Global</h3>
+                        <p class="item001-game-description">Planeje cada movimento e lidere suas forças para a vitória em cenários globais complexos.</p>
+                        <button class="item001-read-more">Leia Mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles">
+        <div class="item002-container">
+            <h2 class="item002-title">Artigos e Notícias</h2>
+            <div class="item002-articles-wrapper">
+                <article class="item002-article">
+                    <h3 class="item002-article-title">Review: Nova Aventura no Mundo de RPG</h3>
+                    <p class="item002-article-content">Descubra tudo sobre a mais recente aventura RPG, com análises detalhadas, mecânicas inovadoras e gráficos impressionantes que redefinem o gênero.</p>
+                    <span class="item002-article-tag">Review</span>
+                </article>
+                
+                <article class="item002-article">
+                    <h3 class="item002-article-title">Notícias: Anúncio do Próximo Game da Série Legend</h3>
+                    <p class="item002-article-content">A desenvolvedora anunciou o próximo jogo da franquia Legend, trazendo novas histórias e modos de jogo. Veja o que esperar deste aguardado título.</p>
+                    <span class="item002-article-tag">Notícias</span>
+                </article>
+
+                <article class="item002-article">
+                    <h3 class="item002-article-title">Opinião: O Futuro dos Jogos Independentes</h3>
+                    <p class="item002-article-content">Os jogos independentes têm se destacado no mercado, oferecendo experiências únicas e inovadoras. Analisamos o impacto desses jogos no cenário atual.</p>
+                    <span class="item002-article-tag">Opinião</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="item003-about-section">
+        <div class="item003-container">
+            <div class="item003-intro">
+                <h2>Sobre a Plataforma</h2>
+                <p>Somos apaixonados por videogames e criamos este portal para conectar jogadores com conteúdo relevante, avaliações e uma comunidade ativa. Nossa missão é promover um espaço onde os jogadores possam descobrir novos jogos, compartilhar experiências e se conectar com outros entusiastas.</p>
+            </div>
+            
+            <div class="item003-features">
+                <h3>Principais Funcionalidades</h3>
+                <ul>
+                    <li>✔️ Avaliações detalhadas dos últimos lançamentos</li>
+                    <li>✔️ Comunidade de jogadores ativa e engajada</li>
+                    <li>✔️ Parcerias exclusivas com desenvolvedores independentes</li>
+                    <li>✔️ Análises de tendências e novidades da indústria</li>
+                </ul>
+            </div>
+            
+            <div class="item003-team">
+                <h3>Nosso Time</h3>
+                <div class="item003-team-members">
+                    <div class="item003-member">
+                        <img src="team1.jpg" alt="Foto do membro 1">
+                        <h4>Maria Souza</h4>
+                        <p>Especialista em Avaliações</p>
+                    </div>
+                    <div class="item003-member">
+                        <img src="team2.jpg" alt="Foto do membro 2">
+                        <h4>João Pereira</h4>
+                        <p>Gerente de Comunidade</p>
+                    </div>
+                    <div class="item003-member">
+                        <img src="team3.jpg" alt="Foto do membro 3">
+                        <h4>Fernanda Lima</h4>
+                        <p>Designer de Experiência</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="top-rated" class="item004-section">
+        <div class="item004-container">
+            <h2>Jogos Mais Bem Avaliados</h2>
+            <div class="item004-gallery">
+                <div class="item004-game-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Jogo 1" class="item004-game-image">
+                    <div class="item004-game-info">
+                        <h3 class="item004-game-title">Jogo 1</h3>
+                        <p class="item004-game-rating">Avaliação: ⭐⭐⭐⭐☆</p>
+                        <p class="item004-game-score">Pontuação: 8.5/10</p>
+                        <button class="item004-action-button">Ver Mais</button>
+                    </div>
+                </div>
+                <div class="item004-game-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Jogo 2" class="item004-game-image">
+                    <div class="item004-game-info">
+                        <h3 class="item004-game-title">Jogo 2</h3>
+                        <p class="item004-game-rating">Avaliação: ⭐⭐⭐⭐⭐</p>
+                        <p class="item004-game-score">Pontuação: 9.7/10</p>
+                        <button class="item004-action-button">Ver Mais</button>
+                    </div>
+                </div>
+                <div class="item004-game-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Jogo 3" class="item004-game-image">
+                    <div class="item004-game-info">
+                        <h3 class="item004-game-title">Jogo 3</h3>
+                        <p class="item004-game-rating">Avaliação: ⭐⭐⭐⭐☆</p>
+                        <p class="item004-game-score">Pontuação: 8.8/10</p>
+                        <button class="item004-action-button">Ver Mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="item005-section">
+        <div class="item005-container">
+            <h2 class="item005-title">Avaliações dos Usuários</h2>
+            <div class="item005-carousel">
+                <div class="item005-review">
+                    <p class="item005-review-text">"Jogo incrível! A jogabilidade é fluida e os gráficos são de outro nível. Recomendo fortemente!"</p>
+                    <div class="item005-stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
+                    </div>
+                    <p class="item005-user">- Lucas Silva</p>
+                </div>
+                <div class="item005-review">
+                    <p class="item005-review-text">"A história do jogo me prendeu do início ao fim. É um dos melhores títulos que já joguei!"</p>
+                    <div class="item005-stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <p class="item005-user">- Mariana Costa</p>
+                </div>
+                <div class="item005-review">
+                    <p class="item005-review-text">"Bom jogo, mas encontrei alguns bugs que atrapalharam a experiência. Espero que atualizem logo."</p>
+                    <div class="item005-stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span>
+                    </div>
+                    <p class="item005-user">- João Pereira</p>
+                </div>
+            </div>
+            <div class="item005-controls">
+                <button class="item005-prev">❮</button>
+                <button class="item005-next">❯</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        const reviews = document.querySelectorAll('.item005-review');
+        const nextButton = document.querySelector('.item005-next');
+        const prevButton = document.querySelector('.item005-prev');
+        let currentIndex = 0;
+
+        function showReview(index) {
+            reviews.forEach((review, i) => {
+                review.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % reviews.length;
+            showReview(currentIndex);
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
+            showReview(currentIndex);
+        });
+
+        showReview(currentIndex);
+    </script>
+
+    <section id="gameplay" class="item006-section">
+        <h2 class="item006-title">Gameplay & Imagens</h2>
+        <p class="item006-description">Explore vídeos e imagens dos nossos jogos favoritos, trailers exclusivos e arte dos fãs.</p>
+
+        <div class="item006-video-carousel">
+            <iframe class="item006-video" width="560" height="315" src="https://www.youtube.com/embed/K4TOrB7at0Y" title="Vídeo de Gameplay 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="item006-video" width="560" height="315" src="https://www.youtube.com/embed/1roy4o4tqQM" title="Vídeo de Gameplay 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="item006-video" width="560" height="315" src="https://www.youtube.com/embed/jklR3XwTCTk" title="Vídeo de Gameplay 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="item006-image-gallery">
+            <img src="https://via.placeholder.com/300x200.png?text=Imagem+1" alt="Imagem 1" class="item006-image">
+            <img src="https://via.placeholder.com/300x200.png?text=Imagem+2" alt="Imagem 2" class="item006-image">
+            <img src="https://via.placeholder.com/300x200.png?text=Imagem+3" alt="Imagem 3" class="item006-image">
+            <img src="https://via.placeholder.com/300x200.png?text=Imagem+4" alt="Imagem 4" class="item006-image">
+        </div>
+    </section>
+
+    <section id="developer-spotlight">
+        <div class="item007-container">
+            <h2 class="item007-title">Destaques de Desenvolvedores & Comunidade</h2>
+            <div class="item007-content">
+                <div class="item007-developers">
+                    <h3 class="item007-subtitle">Destaques dos Desenvolvedores Indie</h3>
+                    <div class="item007-dev-highlight">
+                        <img src="dev1.jpg" alt="Imagem do Jogo Indie 1" class="item007-dev-image">
+                        <div class="item007-dev-info">
+                            <h4>Jogo: <span>Aventura Mística</span></h4>
+                            <p>Desenvolvedor: Estúdio Criativo</p>
+                            <p>Descrição: Um jogo de aventura ambientado em um mundo mágico, repleto de desafios e histórias envolventes.</p>
+                        </div>
+                    </div>
+
+                    <div class="item007-dev-highlight">
+                        <img src="dev2.jpg" alt="Imagem do Jogo Indie 2" class="item007-dev-image">
+                        <div class="item007-dev-info">
+                            <h4>Jogo: <span>Corrida Espacial</span></h4>
+                            <p>Desenvolvedor: Estúdio Galáctico</p>
+                            <p>Descrição: Compita em corridas interplanetárias com veículos futuristas e gráficos de última geração.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atividades da Comunidade -->
+                <div class="item007-community">
+                    <h3 class="item007-subtitle">Atividades da Comunidade</h3>
+                    <div class="item007-community-highlight">
+                        <h4>Arte de Fã: <span>Mundo de Guerra</span></h4>
+                        <img src="fanart.jpg" alt="Arte de fã do jogo Mundo de Guerra" class="item007-community-image">
+                        <p>Artista: Ana Silva</p>
+                        <p>Descrição: Uma impressionante arte conceitual de um dos personagens principais do jogo.</p>
+                    </div>
+
+                    <div class="item007-community-highlight">
+                        <h4>Discussão em Fórum: <span>Melhores Jogos de 2024</span></h4>
+                        <p>Participantes: 150+</p>
+                        <p>Resumo: Uma discussão animada sobre os melhores lançamentos de jogos deste ano, incluindo opiniões e sugestões de novos títulos para experimentar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="item008-container">
+            <h2 class="item008-title">Assine Nossa Newsletter</h2>
+            <p class="item008-description">Receba as últimas notícias e atualizações sobre o mundo dos games diretamente no seu e-mail. Não perca nenhuma novidade!</p>
+            <form class="item008-form">
+                <input type="email" class="item008-input" placeholder="Digite seu e-mail" required>
+                <button type="submit" class="item008-button">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="blog" class="item009-section">
+        <div class="item009-container">
+            <h2 class="item009-title">Blog e Discussões da Comunidade</h2>
+            <article class="item009-post">
+                <h3 class="item009-post-title">Última Atualização do Jogo X</h3>
+                <span class="item009-post-date">Publicado em 10 de Outubro de 2024</span>
+                <p class="item009-post-snippet">
+                    O jogo X recebeu uma grande atualização com novas missões, personagens e um modo multiplayer aprimorado. Descubra todas as novidades nesta análise detalhada...
+                </p>
+                <a href="#" class="item009-read-more">Leia Mais</a>
+            </article>
+            
+            <article class="item009-post">
+                <h3 class="item009-post-title">Top 10 Jogos de RPG de 2024</h3>
+                <span class="item009-post-date">Publicado em 2 de Outubro de 2024</span>
+                <p class="item009-post-snippet">
+                    Fizemos uma lista dos melhores jogos de RPG lançados este ano. Veja quais títulos estão dominando as plataformas e merecem sua atenção...
+                </p>
+                <a href="#" class="item009-read-more">Leia Mais</a>
+            </article>
+
+            <article class="item009-post">
+                <h3 class="item009-post-title">Dicas para Dominar no Modo Competitivo</h3>
+                <span class="item009-post-date">Publicado em 25 de Setembro de 2024</span>
+                <p class="item009-post-snippet">
+                    Quer melhorar seu desempenho no modo competitivo? Confira nossas dicas e truques para subir no ranking e derrotar seus oponentes com facilidade...
+                </p>
+                <a href="#" class="item009-read-more">Leia Mais</a>
+            </article>
+
+            <div class="item009-comments">
+                <h3 class="item009-comment-title">Comentários Recentes</h3>
+                <ul class="item009-comment-list">
+                    <li class="item009-comment">João: "Adorei a análise do jogo X! Realmente, a atualização trouxe muitas melhorias."</li>
+                    <li class="item009-comment">Maria: "A lista dos RPGs é perfeita, mas eu teria incluído o jogo Y."</li>
+                    <li class="item009-comment">Carlos: "Essas dicas para o modo competitivo me ajudaram muito, obrigado!"</li>
+                </ul>
+            </div>
+
+            <div class="item009-community-links">
+                <h3 class="item009-community-title">Participe das Discussões</h3>
+                <p>Converse com outros jogadores e compartilhe suas opiniões:</p>
+                <ul class="item009-links">
+                    <li><a href="#" class="item009-link">Fórum de Discussão</a></li>
+                    <li><a href="#" class="item009-link">Grupo no Discord</a></li>
+                    <li><a href="#" class="item009-link">Canal no YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="proximos-eventos">
+        <div class="item010-container">
+            <h2 class="item010-title">Próximos Eventos e Lançamentos</h2>
+            <p class="item010-description">Fique por dentro das próximas datas de lançamento e eventos da comunidade!</p>
+            
+            <div class="item010-event-calendar">
+                <ul class="item010-event-list">
+                    <li>
+                        <span class="item010-event-date">15 de Outubro</span>
+                        <span class="item010-event-name">Lançamento de "Game X"</span>
+                    </li>
+                    <li>
+                        <span class="item010-event-date">25 de Outubro</span>
+                        <span class="item010-event-name">Live Especial com Desenvolvedores</span>
+                    </li>
+                    <li>
+                        <span class="item010-event-date">5 de Novembro</span>
+                        <span class="item010-event-name">Campeonato da Comunidade</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="item010-countdown-section">
+                <h3>Próximo Lançamento em:</h3>
+                <div class="item010-countdown">
+                    <div class="item010-time-unit">
+                        <span id="item010-days">0</span>
+                        <span>Dias</span>
+                    </div>
+                    <div class="item010-time-unit">
+                        <span id="item010-hours">0</span>
+                        <span>Horas</span>
+                    </div>
+                    <div class="item010-time-unit">
+                        <span id="item010-minutes">0</span>
+                        <span>Minutos</span>
+                    </div>
+                    <div class="item010-time-unit">
+                        <span id="item010-seconds">0</span>
+                        <span>Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function countdown() {
+            const countdownDate = new Date("Oct 15, 2024 00:00:00").getTime();
+            const interval = setInterval(function () {
+                const now = new Date().getTime();
+                const distance = countdownDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("item010-days").innerText = days;
+                document.getElementById("item010-hours").innerText = hours;
+                document.getElementById("item010-minutes").innerText = minutes;
+                document.getElementById("item010-seconds").innerText = seconds;
+
+                if (distance < 0) {
+                    clearInterval(interval);
+                    document.querySelector(".item010-countdown-section h3").innerText = "Lançado!";
+                    document.querySelector(".item010-countdown").style.display = "none";
+                }
+            }, 1000);
+        }
+
+        countdown();
+    </script>
+
+    <section id="contact" class="item011-section">
+        <div class="item011-container">
+            <h2 class="item011-title">Entre em Contato</h2>
+            <p class="item011-description">Tem alguma dúvida ou feedback? Envie-nos uma mensagem ou conecte-se conosco nas redes sociais.</p>
+
+            <form class="item011-contact-form">
+                <label for="item011-name">Nome:</label>
+                <input type="text" id="item011-name" class="item011-input" placeholder="Digite seu nome" required>
+
+                <label for="item011-email">E-mail:</label>
+                <input type="email" id="item011-email" class="item011-input" placeholder="Digite seu e-mail" required>
+
+                <label for="item011-message">Mensagem:</label>
+                <textarea id="item011-message" class="item011-textarea" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+
+                <button type="submit" class="item011-submit-btn">Enviar</button>
+            </form>
+
+            <div class="item011-social-media">
+                <h3 class="item011-subtitle">Siga-nos nas Redes Sociais</h3>
+                <div class="item011-icons">
+                    <a href="https://twitter.com" target="_blank" class="item011-icon item011-twitter">Twitter</a>
+                    <a href="https://discord.com" target="_blank" class="item011-icon item011-discord">Discord</a>
+                    <a href="https://youtube.com" target="_blank" class="item011-icon item011-youtube">YouTube</a>
+                </div>
+            </div>
+
+            <div class="item011-community-links">
+                <h3 class="item011-subtitle">Junte-se à Nossa Comunidade</h3>
+                <a href="https://discord.com" target="_blank" class="item011-community-link">Entre no Discord</a>
+                <a href="https://twitch.tv" target="_blank" class="item011-community-link">Siga no Twitch</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Portal de Jogos. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script>
+        const sections = document.querySelectorAll("section");
+        const options = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.body.className = entry.target.id;
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+#newsletter {
+    background: linear-gradient(to bottom, #ff5e57, #d33f49);
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.item008-container {
+    text-align: center;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item008-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.item008-description {
+    font-size: 18px;
+    color: #f8f8f8;
+    margin-bottom: 30px;
+}
+
+.item008-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item008-input {
+    font-size: 16px;
+    padding: 12px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    flex: 1;
+    min-width: 200px;
+}
+
+.item008-button {
+    font-size: 16px;
+    padding: 12px 20px;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item008-button:hover {
+    background-color: #e67e22;
+}
+
+@media (max-width: 768px) {
+    .item008-form {
+        flex-direction: column;
+    }
+
+    .item008-input, .item008-button {
+        width: 100%;
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+
+    .item008-button {
+        border-radius: 5px;
+    }
+}

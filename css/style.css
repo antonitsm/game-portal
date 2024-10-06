@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease-in-out;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name h1 {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 5px 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #f1c40f;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+
+section h1, section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+
+#hero {
+    background: linear-gradient(to bottom, #FF5733, #FF8D1A); 
+}
+
+#trending {
+    background: linear-gradient(to bottom, #28A745, #218838); 
+}
+
+#articles {
+    background: linear-gradient(to bottom, #FFC107, #E0A800); 
+}
+
+#about {
+    background: linear-gradient(to bottom, #6F42C1, #5A32A3); 
+}
+
+#top-rated {
+    background: linear-gradient(to bottom, #007BFF, #0056B3);
+}
+
+#reviews {
+    background: linear-gradient(to bottom, #17A2B8, #138496);
+}
+
+#gameplay {
+    background: linear-gradient(to bottom, #FF6347, #FF4500); 
+}
+
+#developer-spotlight {
+    background: linear-gradient(to bottom, #20C997, #198754); 
+}
+
+#newsletter {
+    background: linear-gradient(to bottom, #6610F2, #4B0082); 
+}
+
+#blog {
+    background: linear-gradient(to bottom, #FD7E14, #DC6300);
+}
+
+#proximos-eventos {
+    background: linear-gradient(to bottom, #17A2B8, #117A8B);
+}
+
+#contact {
+    background: linear-gradient(to bottom, #6C757D, #495057); 
+}
+
+
+body.hero {
+    background-color: #FF5733; 
+}
+
+body.trending {
+    background-color: #28A745; 
+}
+
+body.articles {
+    background-color: #FFC107; 
+}
+
+body.about {
+    background-color: #6F42C1; 
+}
+
+body.top-rated {
+    background-color: #007BFF; 
+}
+
+body.reviews {
+    background-color: #17A2B8; 
+}
+
+body.gameplay {
+    background-color: #FF6347; 
+}
+
+body.developer-spotlight {
+    background-color: #20C997; 
+}
+
+body.newsletter {
+    background-color: #6610F2; 
+}
+
+body.blog {
+    background-color: #FD7E14; 
+}
+
+body.proximos-eventos {
+    background-color: #17A2B8; 
+}
+
+body.contact {
+    background-color: #6C757D; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-name h1 {
+        font-size: 20px;
+    }
+    .menu a {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,77 @@
+
+.item004-section {
+    padding: 50px 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.item004-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.item004-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.item004-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item004-game-card {
+    background-color: #34495e;
+    border: 1px solid #1abc9c;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item004-game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.item004-game-image {
+    width: 100%;
+    height: auto;
+}
+
+.item004-game-info {
+    padding: 15px;
+}
+
+.item004-game-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.item004-game-rating {
+    font-size: 18px;
+    color: #f39c12;
+}
+
+.item004-game-score {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.item004-action-button {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.item004-action-button:hover {
+    background-color: #16a085;
+}

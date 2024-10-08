@@ -6,7 +6,7 @@
     <meta name="description" content="Portal de jogos em uma única página">
     <meta name="keywords" content="jogos, videogames, portal, análises, comunidade">
     <title>Game Portal</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/trending.css">
     <link rel="stylesheet" href="css/articles.css">
@@ -247,30 +247,7 @@
             </div>
         </div>
     </section>
-    <script>
-        const reviews = document.querySelectorAll('.item005-review');
-        const nextButton = document.querySelector('.item005-next');
-        const prevButton = document.querySelector('.item005-prev');
-        let currentIndex = 0;
-
-        function showReview(index) {
-            reviews.forEach((review, i) => {
-                review.style.display = i === index ? 'block' : 'none';
-            });
-        }
-
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % reviews.length;
-            showReview(currentIndex);
-        });
-
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
-            showReview(currentIndex);
-        });
-
-        showReview(currentIndex);
-    </script>
+    <script src="js/reviews.js"></script>
 
     <section id="gameplay" class="item006-section">
         <h2 class="item006-title">Gameplay & Imagens</h2>
@@ -397,7 +374,7 @@
         </div>
     </section>
 
-    <section id="proximos-eventos">
+    <section id="events">
         <div class="item010-container">
             <h2 class="item010-title">Próximos Eventos e Lançamentos</h2>
             <p class="item010-description">Fique por dentro das próximas datas de lançamento e eventos da comunidade!</p>
@@ -442,33 +419,7 @@
             </div>
         </div>
     </section>
-    <script>
-        function countdown() {
-            const countdownDate = new Date("Oct 15, 2024 00:00:00").getTime();
-            const interval = setInterval(function () {
-                const now = new Date().getTime();
-                const distance = countdownDate - now;
-
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                document.getElementById("item010-days").innerText = days;
-                document.getElementById("item010-hours").innerText = hours;
-                document.getElementById("item010-minutes").innerText = minutes;
-                document.getElementById("item010-seconds").innerText = seconds;
-
-                if (distance < 0) {
-                    clearInterval(interval);
-                    document.querySelector(".item010-countdown-section h3").innerText = "Lançado!";
-                    document.querySelector(".item010-countdown").style.display = "none";
-                }
-            }, 1000);
-        }
-
-        countdown();
-    </script>
+    <script src="js/events.js"></script>
 
     <section id="contact" class="item011-section">
         <div class="item011-container">
@@ -510,23 +461,6 @@
     </footer>
 
 
-    <script>
-        const sections = document.querySelectorAll("section");
-        const options = {
-            threshold: 0.5
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    document.body.className = entry.target.id;
-                }
-            });
-        }, options);
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>

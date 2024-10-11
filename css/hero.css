@@ -1,5 +1,5 @@
 #hero {
-    background-image: url('https://via.placeholder.com/1920x1080');
+    background-image: url('../img/banner-principal.png');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
